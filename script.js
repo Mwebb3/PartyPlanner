@@ -5,7 +5,6 @@ async function fetchParties(){
     const response = await fetch("https://fsa-crud-2aa9294fe819.herokuapp.com/api/2307-ftb-et-web-ft/events");
     const json = await response.json();
     parties = json.data;
-    console.log(parties);
     renderParties();
 }
 
